@@ -1,0 +1,423 @@
+@font-face{
+	font-family: "Roboto";
+	src:url(RobotoCondensed-Regular.woff) format('woff'),
+		url(RobotoCondensed-Regular.woff2) format('woff2');
+	font-weight: 400;
+}
+@font-face{
+	font-family: "Lobster";
+	src:url(Lobster-Regular.woff) format('woff'),
+		url(Lobster-Regular.woff2) format('woff2');
+	font-weight: 400;
+}
+@font-face{
+	font-family: "RC";
+	src:url(RobotoCondensed-Bold.woff) format('woff'),
+		url(RobotoCondensed-Bold.woff2) format('woff2');
+	font-weight: 700;
+}
+
+body{
+	background-color: #eaeaea;
+	position: relative;
+	font-family: "Roboto";
+}
+a{
+	color: black;
+	text-decoration: none;
+	background-color: transparent;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.return{
+	position: fixed;
+	bottom: 125px;
+	right: 50px;
+	width: 50px;
+	height: 50px;
+}
+.regist{
+	position: fixed;
+	width: 300px;
+	padding-bottom: 20px;
+	top: -300px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	border: 1px solid silver;
+	border-radius: 5px;
+	box-shadow: 0 0 10px silver;
+	background-color: white;
+	transition: top 1s ease;
+	z-index: 10;
+}
+.circle{
+	position: absolute;
+	top: -50%;
+	left: 50%;
+	width: 80px;
+	height: 80px;
+	transform: translate(-50%);
+	border: 2px solid #fff;
+	border-radius: 50px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.authorization{
+	background-image: url(../img/man.png);
+}
+.check-in{
+	top:-40%;
+	background-image: url(../img/man-regist.png);
+}
+.show{
+	top: 345px;
+}
+.regist-one{
+	position: relative;
+	width: 100%;
+	margin-bottom: 50px;
+	padding-top: 40px;
+	padding-bottom:20px;
+	background-color: silver;
+}
+.regist div > span{
+	position: relative;
+	font-size: 24px;
+	color: white;
+}
+.regist div > svg{
+	position: absolute;
+	width: 15px;
+	top: 10px;
+	right: 10px;
+	fill: black;
+}
+.regist div > svg:hover{
+	fill: red;
+}
+.regist > label,input,button{
+	margin: 10px auto 5px;
+	display: block;
+	border-radius: 6px;
+}
+
+.regist > label > input{
+	padding: 5px 10px;
+	border: 1px solid silver;
+	border-radius: 5px;
+	box-shadow: 0 2px 9px 1px #d9d9da inset;
+}
+.regist > button{
+	margin: 35px auto 40px;
+	padding: 10px 30px;
+	border:none;
+	border-radius: 2px;
+	box-shadow: 0 0 5px silver;
+	cursor: pointer;
+}
+.exit{
+	position: absolute;
+	top: 4.5%;
+	left: 50%;
+	transform: translate(-50%);
+	width: 200px;
+	height: 60px;
+	text-align: center;
+	z-index: 3;
+}
+header > div:nth-child(1){
+	width: 100%;
+	max-width: 300px;
+	height: 124px;
+	margin: 20px auto 100px;
+	background-image: url(../img/Logo.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.nav-box{
+	position: relative;
+	float: left;
+	width: 100%;
+	background-color: white;
+}
+.nav-box > div:nth-child(1){
+	float: left;
+	height: 40px;
+	margin: 43px 40px 43px 90px;
+}
+.nav-box  nav{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	margin:3.4em auto 0;
+	padding:5px 15px;
+	text-transform: uppercase; 
+}
+.nav-box > nav > a{
+	padding:5px 15px;
+	font-size: 16px;
+}
+.nav-box > nav > a:hover{
+	text-decoration: underline;
+}
+.nav-box > a > svg{
+	float: right;
+	width: 30px;
+	margin-right: 5em;
+	margin-top: 3.2em;
+}
+.nav-box > a > svg:hover,active{
+	fill:silver;
+}
+.nav-box > a > svg:hover,active  .regist{
+	top: 50%;
+}
+section{
+	margin-top: 90px;
+}
+.banner-one{
+	width: 100%;
+	padding-bottom: 55px;
+	background-image: url(../img/Rectangle1@2x.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color:##eae8e8;
+	box-shadow: 0 0 10px #A9A9A9;
+}
+.banner-one > div{
+	width: 100%;
+	max-width: 350px;
+	margin-left: 90px;
+}
+.banner-one div > div{
+	display: block;
+	width: 100%;
+	max-width: 250px;
+	padding-bottom: 40px;
+	padding-top: 50px;
+}
+.banner-one div > span{
+	font-size: 24px;
+	color: #981e32;
+}
+.banner-one div > p{
+	margin-top: 30px;
+	margin-bottom: 25px;
+	font-size: 16px;
+}
+.banner-one div > button{
+	margin:0px !important;
+	padding: 12px 9px;
+	border:1px solid #c2c2c2;
+	font-size: 12px;
+	background-color: transparent;
+	text-transform: uppercase;
+}
+.order > h2{
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	color: #981e32;
+	border-bottom: 1px solid #c2c2c2;
+}
+#two{
+	margin-top: 100px;
+}
+#salad{
+	margin-top: 100px;
+}
+input[type="checkbox"]{
+	display: none;
+}
+.after{
+	position: relative;
+	margin-top: 10px;
+}
+.after:before{
+	content: '';
+	background-image: url(../img/.icon-check-off.png);
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	transform: translate(-50%);
+	opacity: 0.6;
+}
+.after:hover:before{
+	opacity: 1;
+}
+.after:active:before{
+	content: '';
+	background-image: url(../img/.icon-check-on.png);
+	background-size: cover;
+	width: 22px;
+	height: 20px;
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	transform: translate(-50%);
+	opacity: 0.6;
+}
+
+.order div{
+	width: 100%;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	background-color: white;
+	text-align: center;
+	box-shadow: 0 0  10px #A9A9A9;
+}
+.nameD{
+	font-family: "RC";
+}
+.order > div > div{
+	position: relative;
+	display: inline-block;
+	width: 27%;
+	overflow: hidden;
+	margin: 30px 25px 10px 25px; 
+}
+.order > div > div:nth-child(1){
+	margin-left: 0px;
+}
+.order > div > div:nth-child(3){
+	margin-right: 0px;
+}
+.order> div > div > .modal{
+	position: absolute;
+	width: 100%;
+	height: 77%;
+	margin: 0;
+	top: -100%;
+	left: 0px;
+	z-index: 2;
+	text-align: left;
+	background-color: #eaeaea;
+	transition: top 1s ease; 
+}
+.order > div > div:hover .modal{
+	top: 0;
+} 
+.order > div > div > img{
+	margin-bottom: 20px;
+}
+.modal > span{
+	display: block;
+}
+.modal > button{
+	border: 2px solid white;
+	text-transform: uppercase;
+	padding: 5px 5px;
+	background-color: transparent;
+}
+/* Footer */
+footer{
+	width: 100%;
+	color: #fff;
+	background-color: #2f2f2f;
+}
+footer > .container > div:nth-child(1){
+	float: left;
+	height: 40px;
+	margin: 43px 40px 43px 0px;
+}
+.container{
+	width: 1200px;
+	display: block;
+	margin: 0 auto;
+}
+
+.box{
+	margin: 0 auto;
+	width: 300px;
+	border:2px solid silver;
+	text-align: center;
+}
+.box > h2{
+	margin-bottom: 20px;
+}
+.box > h3{
+	margin-top: 20px;
+}
+.box > h2, h3{
+	padding: 20px;
+	background-color: silver;
+}
+.box > span{
+	display: block;
+	margin-bottom: 10px;
+	text-align: left;
+	font-family: "RC";
+}
+.box > a:hover{
+	font-size: 20px;
+	transition: 0.2s font-size linear;
+}
+.order > input{
+    margin-top: 50px;
+    margin-bottom: 25px;
+	padding: 20px 80px;
+    font-size: 18px;
+    background: white;
+    border: none;
+    box-shadow: 0 0 10px silver;
+    border-radius: 5px;
+    color: #2f2f2f;
+    font-family: "Lobster";
+    cursor: pointer;
+}
+.order > a > input{
+    margin-top: 50px;
+    margin-bottom: 25px;
+	padding: 20px 80px;
+    font-size: 18px;
+    background: white;
+    border: none;
+    box-shadow: 0 0 10px silver;
+    border-radius: 5px;
+    color: #2f2f2f;
+    font-family: "Lobster";
+    cursor: pointer;
+}
+footer > .container > nav{
+	float: left;
+	padding: 10px 20px;
+	margin-top: 44px;
+}
+footer > .container > nav > a{
+	padding: 10px 20px;
+	color: #555555;
+}
+footer > .container > nav > a:hover{
+	color: #fff;
+}
+.last-footer{
+	float: right;
+	margin-top: 34px;
+	text-align: right;
+}
+.last-footer > span{
+	display: block;
+	margin-bottom: 20px;
+	color: #555555;
+}
+.last-footer > a{
+	margin: 10px 20px;
+	fill: #555555;
+}
+.last-footer > a:last-child{
+	margin-right: 0px;
+}
+.last-footer > a:hover{
+	fill: #fff;
+}
+.last-footer > a > svg{
+	width: 30px;
+	height: 30px;
+}
